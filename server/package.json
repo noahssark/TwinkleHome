@@ -10,8 +10,8 @@
 		"url": "https://github.com/aayushchugh/shriproperty"
 	},
 	"scripts": {
-		"start": "node app.js",
-		"dev": "tsnd --exit-child --transpile-only app.ts"
+		"dev": "node app.js",
+		"start": "tsnd --exit-child --transpile-only app.ts"
 	},
 	"dependencies": {
 		"aws-sdk": "^2.1059.0",
