@@ -207,7 +207,7 @@ import { MdNetworkWifi ,MdPets , MdPool, MdFreeBreakfast , MdLocalDrink , MdToys
                     </article>
                     <article className="info">
                         <h3>Info</h3>
-                        <h6>price : ${home.Price} per day</h6>
+                        <h6>price : #{home.Price} per day</h6>
                         <h6>Available</h6>
                     </article>
                 </div>

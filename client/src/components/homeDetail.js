@@ -209,7 +209,7 @@ import Weatherdetail from './forcastComponent';
                     </article>
                     <article className="info">
                         <h3>Info</h3>
-                        <h6>price : ${home.Price} lakhs</h6>
+                        <h6>price : #{home.Price} Naira</h6>
                         <h6>Area : {home.Area} sqft</h6>
                         <h6>Spacing : {home.Spacing}</h6>
                     </article>

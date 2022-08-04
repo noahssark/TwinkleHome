@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/BaseUrl';
 import { FadeTransform } from 'react-animation-components';
+import './logo192.png'
 import { BsFillBarChartFill , BsFillBagFill , BsFillBrightnessHighFill ,BsFillPeopleFill} from "react-icons/bs";
 function RenderCard({item ,isLoading , errMess}) {
     if(isLoading) {
@@ -29,8 +30,8 @@ function RenderCard({item ,isLoading , errMess}) {
                     <div className="img-container">
                         <img src={baseUrl + item.image} alt={item.house_title} />
                         <div className="price-top">
-                            <h6>${item.Price}</h6>
-                            <p>lakhs</p>
+                            <h6>#{item.Price}</h6>
+                            <p>Naira</p>
                         </div>
                         <Link to={`/properties/${item._id}`}  className="btn-primary room-link">
                             Features
@@ -73,7 +74,7 @@ function RenderHotel({item ,isLoading , errMess}) {
                     <div className="img-container">
                         <img src={baseUrl + item.image} alt={item.hotel_title} />
                         <div className="price-top">
-                            <h6>${item.Price}</h6>
+                            <h6>#{item.Price}</h6>
                             <p>per day</p>
                         </div>
                         <Link to={`/hotels/${item._id}`}  className="btn-primary room-link">
@@ -95,10 +96,18 @@ function RenderHotel({item ,isLoading , errMess}) {
 function Home(props) {
     return(
         <div>
+            
         <div className="defaultHero">
             <div className="banner">
+               
                 <h1>WELCOME</h1>
-                <div></div>
+                <div>
+                     <Link className="to-home" to="/home">
+                    <div className="logo-name">
+                     {/* <img className="logo" src="https://twinkleproperty.s3.eu-west-3.amazonaws.com/logo192.png" alt="TwinkleHomes" /> */}
+                    </div>
+                </Link>
+                </div>
                 <p>Buy Best Houses</p>
             </div>
         </div>

@@ -18,11 +18,11 @@ function Footer(props) {
                 <div className="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              Jaypee University<br />
-		              of Engg and Tech , Guna<br />
-		              M.P , India<br />
-		              <i className="fa fa-phone fa-lg"></i>: +9952 1234 5678<br />
-		              <i className="fa fa-fax fa-lg"></i>: +9952 8765 4321<br />
+		              Twinkle homes,<br />
+		              Lekki_Ajah, Lagos State,<br />
+		              Nigeria<br />
+		              <i className="fa fa-phone fa-lg"></i>: +234 7036 228 384<br />
+		              <i className="fa fa-fax fa-lg"></i>: +234 7036 228 384<br />
                     </address>
                 </div>
                 <div className="col-12 col-sm-4 align-self-center">
@@ -32,13 +32,13 @@ function Footer(props) {
                         <a className="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>
                         <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter"></i></a>
                         <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube"></i></a>
-                        <a className="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
+                        <a className="btn btn-social-icon" href="mailto:twinkleenterprise2@gmail.com"><i className="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
             </div>
             <div className="row justify-content-center">             
                 <div className="col-auto">
-                    <p>© Copyright 2020 RealEstate - Ayush Srivastava</p>
+                    <p>© Copyright 2022 TwinkleHomes - Twinkle_interactive</p>
                 </div>
             </div>
         </div>

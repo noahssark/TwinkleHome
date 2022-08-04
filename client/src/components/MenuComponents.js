@@ -15,8 +15,8 @@ import { FadeTransform } from 'react-animation-components';
             <div className="img-container">
                 <img src={baseUrl + home.image} alt={home.house_title} />
                 <div className="price-top">
-                    <h6>${home.Price}</h6>
-                    <p>lakhs</p>
+                    <h6>#{home.Price}</h6>
+                    <p>Naira</p>
                 </div>
                 <Link to={`/properties/${home._id}`}  className="btn-primary room-link">
                     Features

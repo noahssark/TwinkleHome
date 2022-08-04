@@ -2,6 +2,9 @@ import React , { Component } from 'react';
 import { Navbar, NavbarBrand ,Nav , NavbarToggler , Collapse , NavItem , Button , Modal , Row, ModalHeader ,ModalBody , Form , FormGroup , Input ,Label } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';  
+import './style.css';
+import logo192 from './logo192.png';
+
 
 
 const required = (val) => val && val.length;
@@ -62,11 +65,21 @@ class Header extends Component {
         return(
             <>
             <Navbar light expand="md">
-                <div className="container">
+                
                     <NavbarToggler onClick={this.toggleNav} />
-                    <NavbarBrand className="mr-auto" href="/"><span className="nav-links">Real E State</span></NavbarBrand>
+                    <NavbarBrand className="mr-auto" href="/">
+                       
+                    </NavbarBrand>
                     <Collapse  isOpen={this.state.isNavOpen} navbar>
                     <Nav navbar>
+                       
+                        <NavItem>
+                            <NavLink className="nav-link" to="/home">
+                                 <span className="nav-links">
+                                    <p>TwinkleHomes</p>
+                                </span>
+                            </NavLink>
+                        </NavItem> 
                         <NavItem>
                             <NavLink className="nav-link" to="/home">
                                 <span className="nav-links">Home</span>
@@ -124,7 +137,7 @@ class Header extends Component {
                                 </NavItem>
                     </Nav>
                     </Collapse>
-                </div>
+                
             </Navbar>
             
             <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>

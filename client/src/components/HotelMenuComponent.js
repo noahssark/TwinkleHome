@@ -15,7 +15,7 @@ import { FadeTransform } from 'react-animation-components';
             <div className="img-container">
                 <img src={baseUrl + hotel.image} alt={hotel.hotel_title} />
                 <div className="price-top">
-                    <h6>${hotel.Price}</h6>
+                    <h6>#{hotel.Price}</h6>
                     <p>per day</p>
                 </div>
                 <Link to={`/hotels/${hotel._id}`}  className="btn-primary room-link">
